@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>「自分も相手も大切にする」ドイツ式コミュニケーション講座</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            light: '#FEF8F4',   // 背景の温かいベージュ
+                            DEFAULT: '#D97757', // アクセントのテラコッタ（オレンジ系）
+                            dark: '#A6563B',    // 濃いテラコッタ
+                            text: '#5A4A42',    // こげ茶（メインテキスト）
+                            muted: '#8A7B74',   // 少し薄いテキスト
+                        },
+                        line: {
+                            DEFAULT: '#06C755',
+                            hover: '#05B34C',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Zen Kaku Gothic New"', 'sans-serif'],
+                        serif: ['"Shippori Mincho"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* カスタムスタイル */
+        body {
+            background-color: #FEF8F4;
+            background-image: radial-gradient(#F5E6DA 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        .text-shadow-sm {
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+        }
+        .highlight-marker {
+            background: linear-gradient(transparent 60%, rgba(217, 119, 87, 0.3) 60%);
+            padding: 0 4px;
+        }
+    </style>
+</head>
+<body class="text-brand-text font-sans antialiased leading-relaxed tracking-wide">
+
+    <!-- FV (ファーストビュー) -->
+    <header class="relative pt-24 pb-32 lg:pt-36 lg:pb-40 overflow-hidden border-b border-brand-DEFAULT/10 flex items-center justify-center min-h-[80vh] md:min-h-[90vh]">
+        <!-- 背景画像とオーバーレイ -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://i.postimg.cc/CM7yf6ty/239675307-544821226970465-5961354438704476236-n.jpg" alt="温かいコミュニケーションのイメージ" class="w-full h-full object-cover object-center opacity-60">
+            <!-- ベージュ系のグラデーションと半透明レイヤーで自然に溶け込ませる -->
+            <div class="absolute inset-0 bg-gradient-to-b from-[#FEF8F4]/80 via-[#FEF8F4]/60 to-[#FEF8F4]"></div>
+            <div class="absolute inset-0 bg-white/30 backdrop-blur-[2px]"></div>
+        </div>
+
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <p class="text-brand-dark font-bold text-sm sm:text-base tracking-widest mb-6 inline-block bg-white/70 px-5 py-2 rounded-full backdrop-blur-sm border border-brand-DEFAULT/20 shadow-sm">もう、人間関係で無理をしない。</p>
+            <h1 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-6 text-shadow-sm text-brand-text">
+                「伝えたいのに伝わらない」<br>
+                <span class="text-brand-DEFAULT text-2xl sm:text-3xl lg:text-4xl mt-4 inline-block">そんな苦しさを抱えていませんか？</span>
+            </h1>
+            <p class="text-base sm:text-lg mb-10 text-brand-text font-medium leading-loose bg-white/50 backdrop-blur-md p-6 sm:p-8 rounded-3xl inline-block max-w-2xl border border-white shadow-sm">
+                我慢ばかりの「察する」コミュニケーションを卒業し、<br class="hidden sm:block">
+                ドイツで学んだ、シンプルで温かい<br class="hidden sm:block">
+                <span class="font-bold text-brand-dark highlight-marker">「自分も相手も大切にする」伝え方</span>をお届けします。
+            </p>
+            <div class="flex justify-center">
+                <a href="https://lin.ee/D8cakei" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-8 py-5 text-lg font-bold text-white bg-line hover:bg-line-hover rounded-full shadow-xl transition-all transform hover:scale-105 duration-300">
+                    <svg class="w-6 h-6 mr-2" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.5 10.1c0-4.6-4.5-8.4-10.1-8.4-5.6 0-10.1 3.8-10.1 8.4 0 4.1 3.6 7.6 8.5 8.3.4.1.9.2 1 .5.1.3 0 .8-.1 1.1-.1.4-.2.8-.4 1.3 0 0-.1.3.1.4.3.2.6 0 1.5-.7 1.2-1 3.7-2.6 4.9-3.7 2.8-2 4.7-4.9 4.7-7.2z"/>
+                    </svg>
+                    今すぐ公式LINEに登録して詳細を見る
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 悩み・共感セクション -->
+    <section class="py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <h2 class="text-2xl sm:text-3xl font-serif font-bold text-center mb-12">
+                <span class="inline-block pb-2 border-b-2 border-brand-DEFAULT">あなたはいくつ当てはまりますか？</span>
+            </h2>
+            
+            <div class="bg-white rounded-2xl shadow-md p-6 sm:p-10 mb-12 border border-brand-DEFAULT/20">
+                <ul class="space-y-5">
+                    <li class="flex items-start">
+                        <svg class="w-7 h-7 text-brand-DEFAULT mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <p class="ml-4 text-lg">本当は言いたいことがあるのに、飲み込んでしまう。後から「ああ言えばよかった」と<strong>一人反省会</strong>をしてしまう。</p>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-7 h-7 text-brand-DEFAULT mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <p class="ml-4 text-lg">相手がどう思うか、些細な反応を気にしすぎて夜も眠れないことがある。</p>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-7 h-7 text-brand-DEFAULT mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <p class="ml-4 text-lg">勇気を出して伝えたのに、意図が伝わらず誤解され、「言わなきゃよかった」と余計に疲れてしまった経験がある。</p>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-7 h-7 text-brand-DEFAULT mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <p class="ml-4 text-lg">「自分の本音を言うこと＝わがまま・人を傷つける・嫌われること」という強い恐怖がある。</p>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-7 h-7 text-brand-DEFAULT mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <p class="ml-4 text-lg">日常の人間関係（職場、家族、友人関係）で、いつも心の奥にモヤモヤした感覚が消えない。</p>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-7 h-7 text-brand-DEFAULT mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <p class="ml-4 text-lg">つい「私さえ我慢すれば丸く収まる」「波風を立てるよりマシだ」と自分を犠牲にしてしまう。</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="text-center space-y-6">
+                <p class="text-xl font-bold text-brand-dark">もし一つでも当てはまるなら、どうか安心してください。</p>
+                <p class="text-lg leading-loose">
+                    それは、決してあなたの「性格」が悪いわけでも、能力が足りないわけでもありません。<br>
+                    あなたがこれまでずっと、<strong>「察すること」「空気を読むこと」そして「相手を傷つけないこと」</strong>を誰よりも大切にしてきたからです。<br>
+                    それは、本来とても素晴らしく、人としての深い優しさです。
+                </p>
+                <p class="text-lg leading-loose">
+                    でも、もしその優しさが、今のあなた自身を縛り付け、苦しめているのだとしたら。<br>
+                    あなたは単に、<span class="font-bold highlight-marker">自分の心を守りながら「伝える」ためのツール</span>を、まだ持っていないだけなのです。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 問題提起セクション -->
+    <section class="py-20 bg-white/50 backdrop-blur-md">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <h2 class="text-2xl sm:text-3xl font-serif font-bold text-center mb-10">
+                <span class="inline-block pb-2 border-b-2 border-brand-DEFAULT">なぜ、あなたの本音は伝わらないのか？</span>
+            </h2>
+            
+            <div class="space-y-6 text-lg leading-loose text-brand-muted">
+                <p>
+                    私たち日本人は、小さい頃から「相手の気持ちを察する」「空気を読む」「自分よりも相手を優先する」ことを美徳として育てられてきました。これは世界に誇るべき美しい文化であり、争いを避けるための深い知恵でもあります。
+                </p>
+                <p>
+                    しかし、価値観が多様化し、情報が溢れる現代の複雑な人間関係において、この文化が<strong class="text-brand-text">「言えない」「限界まで我慢する」「相手の気持ちを勝手に解釈して一人で抱え込む」</strong>という悪循環を生んでいることも事実です。
+                </p>
+                <div class="bg-brand-light p-6 rounded-xl border border-brand-DEFAULT/10 my-8">
+                    <p class="font-bold text-brand-dark mb-2">【察するコミュニケーションの限界】</p>
+                    <p class="italic">「これくらい言わなくてもわかってくれるはず」<br>
+                    「普通なら、この状況は察して動いてほしい」</p>
+                </div>
+                <p>
+                    心の中でそう期待し、相手がその通りに動いてくれないと「裏切られた」「大切にされていない」と感じてしまう。そして、関係が壊れることや誤解されることを恐れて、また口をつぐんでしまう……。
+                </p>
+                <p class="font-bold text-brand-text text-center mt-8 text-xl">
+                    この「言わない期待」と「勝手な失望」のループの中にいる限り、<br class="hidden sm:block">人間関係の深いモヤモヤは決して解消されません。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 解決策（ドイツの事例）セクション -->
+    <section class="py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <div class="flex flex-col md:flex-row gap-10 items-center">
+                <div class="w-full md:w-1/3">
+                    <div class="aspect-w-3 aspect-h-4 bg-brand-DEFAULT/20 rounded-2xl overflow-hidden">
+                        <!-- 装飾的なダミー要素（画像がなくてもデザインが成立するように） -->
+                        <div class="w-full h-full flex items-center justify-center p-6 text-brand-dark bg-[#fdfbf7]">
+                             <svg class="w-32 h-32 opacity-30" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-2/3">
+                    <h2 class="text-2xl sm:text-3xl font-serif font-bold mb-6 text-brand-dark">
+                        ドイツで気づいた「伝える」の真実
+                    </h2>
+                    <div class="space-y-4 text-lg leading-relaxed">
+                        <p>
+                            私は現在、ドイツに住んでいます。ドイツで暮らして一番衝撃を受けたのは、人々が感情的になることなく、<strong class="highlight-marker">必要なことを驚くほどシンプルに言葉にしている</strong>ことでした。
+                        </p>
+                        <p>
+                            例えば、カフェで注文と違うものが出てきたとき。日本では「まあいいか、我慢しよう」となりがちですが、ドイツの人々は「私が頼んだものと違います。交換してください」と、フラットに、時には笑顔で伝えます。そこに相手を責める意図はありません。
+                        </p>
+                        <p>
+                            彼らは、むやみに相手を非難しません。でも、同時に<strong class="text-brand-text">自分自身を我慢させることもしない</strong>のです。
+                        </p>
+                        <p>
+                            「言葉にして曖昧にしない」ことこそが、結果として最も相手を尊重し、不要な誤解を防ぎ、関係性をこじれさせない最短の道だと知っているからです。
+                        </p>
+                        <p class="font-bold text-xl text-brand-DEFAULT mt-6">
+                            「伝えたいことを伝えても、関係は壊れない。むしろ、信頼は深まるんだ」
+                        </p>
+                        <p>
+                            この考え方に出会ったとき、長年「察する」ことに縛られていた私の世界は大きく変わりました。人との関わりが驚くほどラクになり、自分らしく息ができるようになったこの感覚を、あなたにもぜひ体験してほしいのです。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3つのスキルセクション -->
+    <section class="py-20 bg-[#F5E6DA]/40">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
+            <h2 class="text-2xl sm:text-3xl font-serif font-bold text-center mb-4">
+                この講座で得られる「3つのスキル」
+            </h2>
+            <p class="text-center text-brand-muted mb-12">本講座では、ドイツ式の合理的な考え方をベースに、<br class="hidden sm:block">日本人の繊細な心に寄り添った、明日から実践できる具体的なメソッドをお伝えします。</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- スキル1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border-t-4 border-brand-DEFAULT hover:shadow-md transition-shadow">
+                    <div class="w-14 h-14 bg-brand-light rounded-full flex items-center justify-center text-brand-DEFAULT text-2xl font-bold mb-6">1</div>
+                    <h3 class="text-xl font-bold mb-4">モヤモヤを言語化する力</h3>
+                    <p class="text-brand-muted leading-relaxed">
+                        「なんとなく苦しい」「なんとなく嫌だった」……日常で感じるその正体不明の感覚を丁寧に分解し、自分の本当の「本音」として整理する方法を学びます。モヤモヤは、あなたが「自分を大切にしたい」と発している大切なサインです。その声に気づくことからすべては始まります。
+                    </p>
+                </div>
+                <!-- スキル2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border-t-4 border-brand-DEFAULT hover:shadow-md transition-shadow">
+                    <div class="w-14 h-14 bg-brand-light rounded-full flex items-center justify-center text-brand-DEFAULT text-2xl font-bold mb-6">2</div>
+                    <h3 class="text-xl font-bold mb-4">「パーソナルに受け取らない」視点</h3>
+                    <p class="text-brand-muted leading-relaxed">
+                        相手のちょっとした言葉や不機嫌な態度を、「私の言い方が悪かったんだ」「私が嫌われているんだ」と、自分への攻撃として過剰に受け取ってしまう癖を卒業します。他人の感情に振り回されず、事実と感情を切り離し、フラットに見るためのドイツ式思考法を身につけます。
+                    </p>
+                </div>
+                <!-- スキル3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border-t-4 border-brand-DEFAULT hover:shadow-md transition-shadow">
+                    <div class="w-14 h-14 bg-brand-light rounded-full flex items-center justify-center text-brand-DEFAULT text-2xl font-bold mb-6">3</div>
+                    <h3 class="text-xl font-bold mb-4">「本音をやさしく伝える」実践</h3>
+                    <p class="text-brand-muted leading-relaxed">
+                        「攻撃的になりたくない」「相手を傷つけたくない」。そう心から思う優しいあなただからこそできる伝え方があります。相手の立場を尊重しながらも、自分の意志や境界線をしっかりと、温かい言葉で伝えるための「言葉選びの公式」をお伝えします。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 受講後の変化（Before/After） -->
+    <section class="py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <h2 class="text-2xl sm:text-3xl font-serif font-bold text-center mb-12">
+                <span class="inline-block pb-2 border-b-2 border-brand-DEFAULT">受講後の変化</span>
+            </h2>
+            
+            <div class="flex flex-col md:flex-row items-stretch justify-center gap-6">
+                <!-- Before -->
+                <div class="flex-1 bg-white p-8 rounded-2xl border border-gray-200 opacity-80">
+                    <h3 class="text-center font-bold text-gray-500 mb-6 text-xl">Before: 言えない苦しみ</h3>
+                    <img src="https://i.postimg.cc/Pr49KfmX/25837951-s.jpg" alt="言えない苦しみのイメージ" class="w-full h-40 sm:h-48 object-cover rounded-xl mb-6 shadow-sm">
+                    <ul class="space-y-4 text-gray-600">
+                        <li class="flex items-start"><svg class="w-6 h-6 mr-2 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>言いたいことが喉まで来るのに、最後で飲み込んでしまう</li>
+                        <li class="flex items-start"><svg class="w-6 h-6 mr-2 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>常に人の顔色を伺い、相手の機嫌を取るのに必死</li>
+                        <li class="flex items-start"><svg class="w-6 h-6 mr-2 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>誤解されても反論できず、自分を責めて深く落ち込む</li>
+                        <li class="flex items-start"><svg class="w-6 h-6 mr-2 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>「私が我慢すればいい」と自分を後回しにするのが当たり前</li>
+                    </ul>
+                </div>
+                
+                <!-- 矢印 -->
+                <div class="flex items-center justify-center md:px-4 py-4 md:py-0">
+                    <svg class="w-10 h-10 text-brand-DEFAULT transform rotate-90 md:rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </div>
+
+                <!-- After -->
+                <div class="flex-1 bg-white p-8 rounded-2xl border-2 border-brand-DEFAULT shadow-lg relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-brand-DEFAULT text-white text-xs font-bold px-3 py-1 rounded-bl-lg">未来のあなた</div>
+                    <h3 class="text-center font-bold text-brand-dark mb-6 text-xl">After: 軽やかな人間関係へ</h3>
+                    <img src="https://i.postimg.cc/MH2yvK80/4182533-s.jpg" alt="軽やかな人間関係のイメージ" class="w-full h-40 sm:h-48 object-cover rounded-xl mb-6 shadow-sm">
+                    <ul class="space-y-4 text-brand-text font-medium">
+                        <li class="flex items-start"><svg class="w-6 h-6 mr-2 text-brand-DEFAULT flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>自分の気持ちを客観的に整理し、落ち着いて言葉にできる</li>
+                        <li class="flex items-start"><svg class="w-6 h-6 mr-2 text-brand-DEFAULT flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>相手の反応に過剰に振り回されない「心の軸」ができる</li>
+                        <li class="flex items-start"><svg class="w-6 h-6 mr-2 text-brand-DEFAULT flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>「嫌われる勇気」ではなく、「自分を大切にする勇気」を持てる</li>
+                        <li class="flex items-start"><svg class="w-6 h-6 mr-2 text-brand-DEFAULT flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>我慢ではなく、対話で良好な人間関係を築ける自信がつく</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 参加者の声 -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <h2 class="text-2xl sm:text-3xl font-serif font-bold text-center mb-12">
+                <span class="inline-block pb-2 border-b-2 border-brand-DEFAULT">参加者の声</span>
+            </h2>
+            
+            <div class="space-y-8">
+                <!-- Voice 1 -->
+                <div class="bg-brand-light p-6 rounded-2xl rounded-tl-none relative shadow-sm ml-4">
+                    <div class="absolute -left-4 top-0 text-5xl text-brand-DEFAULT opacity-50 font-serif">"</div>
+                    <p class="text-lg font-bold mb-2">言葉にする勇気をもらえました！</p>
+                    <p class="text-brand-muted leading-relaxed">「これまでずっと『相手に察してほしい』と期待しては裏切られ、勝手に疲れていました。講座を受けて、自分のモヤモヤの正体がわかり、それをどう言葉にすれば角が立たないかを知ることができました。少しずつですが、自分の気持ちを言葉にする勇気を持てるようになっています。」</p>
+                    <p class="text-right text-sm text-gray-500 mt-2">（30代女性・会社員）</p>
+                </div>
+                <!-- Voice 2 -->
+                <div class="bg-brand-light p-6 rounded-2xl rounded-tr-none relative shadow-sm mr-4">
+                    <div class="absolute -right-4 top-0 text-5xl text-brand-DEFAULT opacity-50 font-serif">"</div>
+                    <p class="text-lg font-bold mb-2">相手を責めずに伝える方法がわかって心が軽く</p>
+                    <p class="text-brand-muted leading-relaxed">「『本音を言う＝相手を傷つける』と思い込んでいました。でも、パーソナルに受け取らない視点と、やさしく伝えるコツを学んだことで、『自分を守るための言葉は、決して武器ではない』と腑に落ちました。夫との些細な喧嘩が劇的に減りました。」</p>
+                    <p class="text-right text-sm text-gray-500 mt-2">（40代女性・主婦）</p>
+                </div>
+                <!-- Voice 3 -->
+                <div class="bg-brand-light p-6 rounded-2xl rounded-tl-none relative shadow-sm ml-4">
+                    <div class="absolute -left-4 top-0 text-5xl text-brand-DEFAULT opacity-50 font-serif">"</div>
+                    <p class="text-lg font-bold mb-2">人間関係のストレスがこんなに減るなんて</p>
+                    <p class="text-brand-muted leading-relaxed">「ドイツ式の合理的な考え方がとても新鮮でした。職場で上司の顔色ばかり見てモヤモヤしていましたが、頭の中が整理されるだけで、こんなにも毎日のストレスが減るのかと驚いています。一生使えるスキルを学べたと思います。」</p>
+                    <p class="text-right text-sm text-gray-500 mt-2">（30代女性・フリーランス）</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 価値と価格 -->
+    <section class="relative py-20 bg-[#9B2D30] text-white overflow-hidden">
+        <!-- 背景画像とえんじ色のオーバーレイ -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1604871000636-074fa5117945?auto=format&fit=crop&w=1920&q=80" alt="背景テクスチャ" class="w-full h-full object-cover object-center opacity-50 mix-blend-overlay">
+            <div class="absolute inset-0 bg-[#9B2D30]/85"></div>
+        </div>
+
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 text-center relative z-10">
+            <h2 class="text-2xl sm:text-3xl font-serif font-bold mb-8">
+                なぜ、5,000円で開催するのか？
+            </h2>
+            <div class="space-y-6 text-lg leading-loose text-brand-light text-left sm:text-center">
+                <p>
+                    この講座は、表面的な「話し方」や単なるコミュニケーションテクニックを教える場ではありません。<br>
+                    一生使える<strong class="text-white">「人との関わり方」</strong>、そして何より<strong class="text-white">「自分自身の心との向き合い方」</strong>を根本から身につけるための濃密な60分です。
+                </p>
+                <p>
+                    人間関係の悩みは、仕事のパフォーマンス、家族と過ごす温かい時間、パートナーシップ、さらにはSNSでの発信まで……あなたの人生のあらゆる場面に影を落とします。<br>
+                    逆に言えば、この「伝える土台」さえ整えば、人生のあらゆる場面が驚くほど好転し始めます。
+                </p>
+                <p>
+                    これからの人生、もう他人の顔色に怯えて自分をすり減らすのは終わりにしませんか？<br>
+                    これは、<strong class="text-white highlight-marker" style="background: linear-gradient(transparent 60%, rgba(255, 255, 255, 0.3) 60%);">「心から安心できる未来のあなた」への価値ある投資</strong>です。<br>
+                    その第一歩を踏み出しやすいよう、この価格に設定いたしました。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 講師紹介 -->
+    <section class="py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <h2 class="text-2xl sm:text-3xl font-serif font-bold text-center mb-12">
+                <span class="inline-block pb-2 border-b-2 border-brand-DEFAULT">講師紹介</span>
+            </h2>
+            
+            <div class="bg-white p-8 sm:p-10 rounded-3xl shadow-md flex flex-col md:flex-row items-center gap-8 border border-brand-DEFAULT/10">
+                <div class="w-40 h-40 flex-shrink-0 rounded-full overflow-hidden bg-brand-light border-4 border-[#F5E6DA]">
+                    <img src="https://i.postimg.cc/rwx105Hq/34171-7700.jpg" alt="浅井ますみ" class="w-full h-full object-cover">
+                </div>
+                <div>
+                    <p class="text-sm text-brand-DEFAULT font-bold mb-1">発信 × 心の言語化コンサルタント / ドイツ在住</p>
+                    <h3 class="text-2xl font-serif font-bold mb-4">浅井 ますみ <span class="text-sm font-normal text-gray-500 ml-2">Masumi Asai</span></h3>
+                    <p class="text-brand-muted leading-relaxed mb-4">
+                        「発信で人と人を繋げる」をテーマに活動。海外での生活を通して、日本の美徳である「察する文化」と、ドイツの合理的でシンプルな「伝える文化」の大きな違いを肌で体感する。
+                    </p>
+                    <p class="text-brand-muted leading-relaxed">
+                        自身も人間関係で悩み、言葉を飲み込んできた経験から、「モヤモヤを言葉にする」「パーソナルに受け取らない」「本音をやさしく伝える」という3つの柱を軸にした独自のコミュニケーション論を提唱。同じように「言えずに苦しんでいる」多くの女性たちの心を軽くし、自分らしい発信や人間関係構築のサポートを行っている。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 開催概要・CTA -->
+    <section id="cta" class="py-20 bg-[#F5E6DA]/50">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 text-center">
+            <div class="bg-white p-8 sm:p-12 rounded-3xl shadow-xl border-t-8 border-brand-DEFAULT">
+                <h2 class="text-2xl sm:text-3xl font-serif font-bold text-brand-dark mb-8">
+                    開催日時・詳細
+                </h2>
+                
+                <p class="mb-6 text-lg">今回の講座は<strong class="text-brand-DEFAULT">オンライン開催（Zoom等）</strong>です。<br>ご都合の良い日時をお選びください。</p>
+                
+                <div class="bg-brand-light p-6 rounded-xl text-left max-w-md mx-auto mb-8">
+                    <ul class="space-y-4 font-medium text-lg">
+                        <li class="flex items-center">
+                            <span class="w-3 h-3 rounded-full bg-brand-DEFAULT mr-3"></span>
+                            6月26日（金） 15:30〜16:30
+                        </li>
+                        <li class="flex items-center text-gray-400 line-through">
+                            <span class="w-3 h-3 rounded-full bg-gray-300 mr-3"></span>
+                            6月30日（火） 15:30〜16:30（※満席）
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-3 h-3 rounded-full bg-brand-DEFAULT mr-3"></span>
+                            7月17日（金） 19:00〜20:00
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-3 h-3 rounded-full bg-brand-DEFAULT mr-3"></span>
+                            7月21日（火） 15:30〜16:30
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="flex justify-center gap-8 mb-8 text-lg">
+                    <div>
+                        <span class="block text-sm text-brand-muted">参加費</span>
+                        <strong class="text-2xl text-brand-dark">5,000円<span class="text-base font-normal">（税込）</span></strong>
+                    </div>
+                    <div class="w-px bg-gray-300"></div>
+                    <div>
+                        <span class="block text-sm text-brand-muted">定員</span>
+                        <strong class="text-xl text-brand-dark">各回限定数あり</strong><br>
+                        <span class="text-xs text-brand-DEFAULT">※定員になり次第締切</span>
+                    </div>
+                </div>
+
+                <div class="border-t border-gray-200 pt-8 mt-4">
+                    <h3 class="text-xl font-bold mb-4">お申し込みステップ</h3>
+                    <ol class="text-left max-w-sm mx-auto space-y-3 mb-8 text-brand-muted">
+                        <li class="flex"><span class="font-bold text-brand-DEFAULT mr-2">1.</span> 以下のボタンから公式LINEに登録</li>
+                        <li class="flex"><span class="font-bold text-brand-DEFAULT mr-2">2.</span> メッセージに【お名前】と【希望日時】を送信</li>
+                        <li class="flex"><span class="font-bold text-brand-DEFAULT mr-2">3.</span> 確認後、折り返し詳細をご案内いたします</li>
+                    </ol>
+
+                    <a href="https://lin.ee/D8cakei" target="_blank" rel="noopener noreferrer" class="block w-full sm:w-auto px-8 py-5 text-xl font-bold text-white bg-[#06C755] hover:bg-[#05B34C] rounded-full shadow-lg transition-all transform hover:scale-105 duration-300">
+                        <div class="flex items-center justify-center">
+                            <svg class="w-7 h-7 mr-2" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.5 10.1c0-4.6-4.5-8.4-10.1-8.4-5.6 0-10.1 3.8-10.1 8.4 0 4.1 3.6 7.6 8.5 8.3.4.1.9.2 1 .5.1.3 0 .8-.1 1.1-.1.4-.2.8-.4 1.3 0 0-.1.3.1.4.3.2.6 0 1.5-.7 1.2-1 3.7-2.6 4.9-3.7 2.8-2 4.7-4.9 4.7-7.2z"/>
+                            </svg>
+                            公式LINEに登録して申し込む
+                        </div>
+                    </a>
+                    <p class="text-sm text-brand-DEFAULT mt-4 font-bold">※少人数制のため、迷われている方はお早めに！</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 最後のメッセージ -->
+    <section class="py-20 pb-32">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 text-center">
+            <h2 class="text-2xl sm:text-3xl font-serif font-bold mb-8">
+                最後に：あなたへ伝えたいこと
+            </h2>
+            <div class="space-y-6 text-lg leading-loose text-brand-text">
+                <p>
+                    「伝える」ということは、相手をコントロールして変えようとすることではありません。<br>
+                    伝えることは、<strong class="highlight-marker">あなた自身を大切にし、尊厳を守るための行動</strong>です。
+                </p>
+                <p>
+                    あなたが長年胸の奥に抱えているその「本音」は、決して誰かを傷つけるための冷たい刃物ではありません。<br>
+                    あなた自身の心を守り、そして相手と本当の意味でわかり合うための、とても大切で温かい言葉です。
+                </p>
+                <p class="font-bold text-xl text-brand-dark mt-8 mb-8">
+                    「言えない私」から「やさしく伝えられる私」へ。
+                </p>
+                <p>
+                    新しい扉を開くその第一歩を、私と一緒に踏み出しませんか？<br>
+                    画面越しに、あなたとお会いできることを心から楽しみにしています。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-text py-8 text-center text-brand-light text-sm">
+        <p>&copy; 2026 Masumi Asai. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
